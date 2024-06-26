@@ -1,0 +1,9 @@
+.soumya{
+    background: linear-gradient(to right,
+        rgb(133, 129, 129), rgb(192, 179, 179), rgb(215, 203, 203));
+    padding: 50px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding-left: 50px;
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(252, 229, 229);
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .header-b{
+            font-size: 50px;
+            font-weight: 600;
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: linear-gradient(rgb(255, 170, 170), rgb(255, 194, 194), rgb(252, 198, 198), rgb(255, 216, 216));
+            padding-top: 10px;
+            letter-spacing: 6px;
+            color: white;
+        }
+        .header-a{
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(253, 188, 188);
+            padding-bottom: 35px;
+            background: linear-gradient(rgb(255, 216, 216), rgb(252, 198, 198), rgb(255, 194, 194), rgb(255, 170, 170));
+        }
+        .header1{
+            width: 200px;
+            margin-left: 50px;
+            cursor: pointer;
+            
+        }
+        .header1 img{
+            width: 100%;
+            border-radius: 360px;
+            cursor: pointer;
+        }
+        .header2{
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 20px;
+            cursor: pointer;
+            padding-top: 55px;
+            padding-bottom: 20px;
+        }
+        .header2:hover{
+            border-bottom: 5px solid rgb(255, 160, 160);
+        }
+        .header3{
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            height: 20px;
+            width: 200;
+            cursor: pointer;
+            background-color: rgb(255, 154, 154);
+            padding-bottom: 20px;
+            margin-top: 65px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 3px;
+        }
+        .header3:hover{
+            background-color: rgb(255, 61, 61);
+        }
+        .main div{
+            width: 100%;
+            padding-top: 20px;
+        }
+        .main div img{
+            width: 80%;
+        }
+        .premium{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 30px;
+            background: linear-gradient(to right, rgb(255, 168, 168), rgb(255, 213, 213), rgb(255, 224, 224), rgb(255, 236, 236));
+            color: white;
+            padding-bottom: 30px;
+        }
+        .premium1{
+            margin-top: 10px;
+        }
+        .premium2{
+            font-size: 35px;
+            letter-spacing: 6px;
+        }
+        .break-fast-items{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 50px;
+            margin-right: 50px;
+            row-gap: 20px;
+        }
+        .break-fast-items div{
+            width:400px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .break-fast-items div img{
+            width: 95%;
+            border-radius: 10px;
+        }
+        .break-fast-items div:hover{
+            box-shadow: 0px 0px 20px rgb(255, 192, 192);
+        }
+        .break-fast-items div p{
+            font-size: 20px;
+            letter-spacing: 6px;
+        }
+        .break-fast{
+            font-size: 50px;
+            margin-top: 50px;
+            letter-spacing: 6px;
+        }
+        .lunch{
+            font-size: 50px;
+            margin-top: 50px;
+            letter-spacing: 6px;
+        }
+        .lunch-items{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 50px;
+            margin-right: 50px;
+            row-gap: 20px;
+        }
+        .lunch-items div{
+            width:400px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .lunch-items div img{
+            width: 95%;
+            border-radius: 10px;
+        }
+        .lunch-items div:hover{
+            box-shadow: 0px 0px 20px rgb(255, 192, 192);
+        }
+        .lunch-items div p{
+            font-size: 20px;
+        }
+        .break-fast-items div center p{
+            font-size: 30px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .lunch-items div center p{
+            font-size: 30px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .break-fast-items div center button{
+            background-color: rgb(255, 172, 172);
+            color: white;
+            padding: 10px 20px 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .lunch-items div center button{
+            background-color: rgb(255, 172, 172);
+            color: white;
+            padding: 10px 20px 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-b">
+            DINNER TAGLINE WELCOMES YOU
+        </div>
+        <div class="header-a">
+            <div class="header1">
+                <img src="https://images.creativemarket.com/0.1.0/ps/7262394/1820/1214/m1/fpnw/wm0/dining-restaurant-logo-design-inspiration-.jpg?1573169154&s=f5468f33601a341466e0fb5dc1da8c4d" alt="">
+            </div>
+            <div class="header2">MENU</div>
+            <div class="header2">LOCATIONS</div>
+            <div class="header2">OUR STORY</div>
+            <div class="header2">GET VOUCHERS</div>
+            <div class="header2">OVERVIEW</div>
+            <div class="header2">ORDER ONLINE</div>
+            <div class="header2">REVIEWS</div>
+            <div class="header2">PHOTOS</div>
+            <div class="header3">BOOK A TABLE</div>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <center>
+                <img src="https://cbsnews3.cbsistatic.com/hub/i/r/2015/07/01/0b059f60-344d-4ada-baae-e683aff3650a/thumbnail/1200x630/2226321bd6cfb38c77c917a8a48ae3e4/istock000044051102large.jpg" alt="">
+            </center>
+        </div>
+        <div class="premium">
+            <div class="premium1"><hr></div>
+            <div class="premium2"><center>FOOD - YOU LIKE IT</center></div>
+            <div class="premium1"><hr></div>
+        </div>
+        <div class="break-fast"><center>BREAK FAST</center></div>
+        <div class="break-fast-items">
+            <div>
+                <center><p>Alu Poha</p></center>
+                <center><img src="https://nomadparadise.com/wp-content/uploads/2022/07/indian-foods-01-960x640.jpg.webp" alt="">
+                    <button>Order Now</button>
+                </center>
+            </div>
+            <div>
+                <center><p>Dosa</p></center>
+                <center><img src="https://nomadparadise.com/wp-content/uploads/2022/07/indian-foods-02-960x640.jpg.webp" alt="">
+                    <button>Order Now</button>
+                </center>
+            </div>
+            <div>
+                <center><p>Idli</p></center>
+                <center><img src="https://nomadparadise.com/wp-content/uploads/2022/07/indian-foods-03-960x640.jpg.webp" alt="">
+                    <button>Order Now</button>
+                </center>
+            </div>
+            <div>
+                <center><p>Pongal</p></center>
+                <center><img src="https://nomadparadise.com/wp-content/uploads/2022/07/indian-foods-04-960x640.jpg.webp" alt="">
+                    <button>Order Now</button>
+                </center>
+            </div>
+            <div>
+                <center><p>Appam</p></center>
+                <center><img src="https://nomadparadise.com/wp-content/uploads/2022/07/indian-foods-05-960x640.jpg.webp" alt="">
+                    <button>Order Now</button>
+                </center>
+            </div>
+            <div>
+                <center><p>Puri and Potatoes</p></center>
+                <center><img src="https://nomadparadise.com/wp-content/uploads/2022/07/indian-foods-08-960x640.jpg.webp" alt="">
+                    <button>Order Now</button>
+                </center>
+            </div>
+            <div>
+                <center><p>Chole Bhature</p></center>
+                <center><img src="https://nomadparadise.com/wp-content/uploads/2022/07/indian-foods-09-960x640.jpg.webp" alt="">
+                    <button>Order Now</button>
+                </center>
+            </div>
+            <div>
+                <center><p>Semiya Upma</p></center>
+                <center><img src="https://nomadparadise.com/wp-content/uploads/2022/07/indian-foods-10-960x640.jpg.webp" alt="">
+                    <button>Order Now</button>
+                </center>
+            </div>
+            <div>
+                <center><p>Alu Paratha</p></center>
+                <center><img src="https://nomadparadise.com/wp-content/uploads/2022/07/indian-foods-07-960x640.jpg.webp" alt="">
+                    <button>Order Now</button>
+                </center>
+            </div>
+        </div>
+        <br><br><br><br>
+        <hr><hr>
+
+        <div class="lunch"><center>LUNCH & DINNER</center></div>
+        <div class="lunch-items">
+            <div>
+                <center><p>Biryani</p></center>
+                <center><img src="https://nomadparadise.com/wp-content/uploads/2022/07/indian-foods-11-960x640.jpg.webp" alt="">
+                    <button>Order Now</button>
+                </center>
+            </div>
+            <div>
+                <center><p>Bisi Bele Bath</p></center>
+                <center><img src="https://nomadparadise.com/wp-content/uploads/2022/07/indian-foods-12-960x640.jpg.webp" alt="">
+                    <button>Order Now</button>
+                </center>
+            </div>
+            <div>
+                <center><p>Curd Rice</p></center>
+                <center><img src="https://nomadparadise.com/wp-content/uploads/2022/07/indian-foods-13-960x640.jpg.webp" alt="">
+                    <button>Order Now</button>
+                </center>
+            </div>
+            <div>
+                <center><p>Thali Meals</p></center>
+                <center><img src="https://nomadparadise.com/wp-content/uploads/2022/07/indian-foods-14-960x640.jpg.webp" alt="">
+                    <button>Order Now</button>
+                </center>
+            </div>
+            <div>
+                <center><p>Indian Breads</p></center>
+                <center><img src="https://nomadparadise.com/wp-content/uploads/2022/07/indian-foods-15-960x640.jpg.webp" alt="">
+                    <button>Order Now</button>
+                </center>
+            </div>
+            <div>
+                <center><p>Tamarind Rice</p></center>
+                <center><img src="https://nomadparadise.com/wp-content/uploads/2022/07/indian-foods-18-960x640.jpg.webp" alt="">
+                    <button>Order Now</button>
+                </center>
+            </div>
+            <hr><hr>
+
+        </div>
+    </div>
+    <div>footer</div>
+</body>
+</html>

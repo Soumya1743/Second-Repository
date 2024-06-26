@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: rgb(244, 244, 244);
+        }
+        .banner img{
+            width: 100%;
+        }
+        .sub-banner{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+        .sub-banner1{
+            box-shadow: 0px 0px 20px gray;
+            background-color: white;
+        }
+        .banner-image{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+        }
+        .banner-image div img{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 90%;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+        }
+        .banner-title{
+            font-size: 25px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+        .caption{
+            margin-left: 30px;
+            font-size: 15px;
+        }
+        .anchor{
+            margin-left: 10px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        .mobiles{
+            background-color: white;
+            margin-top: 25px;
+            box-shadow: 0px 0px 20px gray;
+        }
+        .mobiles1{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            column-gap: 20px;
+            background-color: white;
+        }
+        .mobiles-title{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 25px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        .mobiles1 div img{
+            width: 65%;
+            margin-left: 60px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .anchor2{
+            background-color: rgba(255, 30, 0, 0.738);
+            font-size: 15px;
+            margin-left: 15px;
+        }
+        .anchor1{
+            font-size: 16px;
+            margin-left: 20px;
+        }
+        .anchor3{
+            font-size: 15px;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+        .mobile-image{
+            
+            background-color: rgb(244, 244, 244);
+        }
+        .mobile-image p{
+            margin-left: 15px;
+            font-size: 13px;
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+<body>
+    <div class="header">
+        header
+    </div>
+    <div class="main">
+        <div class="banner">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img24/Holi24/GW/Holi24_GW_PC_H1_2x._CB579546797_.jpg" alt="">
+        </div>
+
+
+        <div class="sub-banner">
+            <div class="sub-banner1">
+                <div class="banner-title">
+                    <b>Appliances for your home | Up to 55% off</b>
+                </div>
+                <div class="banner-image">
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" alt="">
+                        <figcaption class="caption">Air Conditioners</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg" alt="">
+                        <figcaption class="caption">Refrigerators</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg" alt="">
+                        <figcaption class="caption">Microwaves</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg" alt="">
+                        <figcaption class="caption">Washing Machines</figcaption>
+                    </div>
+                    <a href="" class="anchor">See more</a>
+                </div>
+            </div>
+
+            <div class="sub-banner1">
+                <div class="banner-title">
+                    <b>Up to 60% off | Styles for men</b>
+                </div>
+                <div class="banner-image">
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-1-186-116._SY116_CB636110853_.jpg" alt="">
+                        <figcaption class="caption">Clothing</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-2-186-116._SY116_CB636110853_.jpg" alt="">
+                        <figcaption class="caption">Footwere</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-3-186-116._SY116_CB636110853_.jpg" alt="">
+                        <figcaption class="caption">Watches</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-4-186-116._SY116_CB636110853_.jpg" alt="">
+                        <figcaption class="caption">Bags & Wallets</figcaption>
+                    </div>
+                    <a href="" class="anchor">End of season sale</a>
+                </div>
+            </div>
+
+            <div class="sub-banner1">
+                <div class="banner-title">
+                    <b>Starting ₹99 | All your home improvement needs</b>
+                </div>
+                <div class="banner-image">
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_4._SY116_CB600489960_.jpg" alt="">
+                        <figcaption class="caption">Spin mops, wipes & more</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_3._SY116_CB600489960_.jpg" alt="">
+                        <figcaption class="caption">Bathroom hardware & accessories</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_7._SY116_CB600489960_.jpg" alt="">
+                        <figcaption class="caption">Hammers, screwdrivers & more</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_5._SY116_CB600489960_.jpg" alt="">
+                        <figcaption class="caption">Extension bords, plugs & more</figcaption>
+                    </div>
+                    <a href="" class="anchor">Explore all</a>
+                </div>
+            </div>
+
+            <div class="sub-banner1">
+                <div class="banner-title">
+                    <b>Up to 75% off | Headphones</b>
+                </div>
+                <div class="banner-image">
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Boat_Desktop_Qc_1x._SY116_CB577919562_.jpg" alt="">
+                        <figcaption class="caption">Up to 75% off | Boat</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Boult_Desktop_Qc_1x._SY116_CB577919562_.jpg" alt="">
+                        <figcaption class="caption">Up to 75% off | Boult</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Noise_Desktop_Qc_1x._SY116_CB577919562_.jpg" alt="">
+                        <figcaption class="caption">Up to 75% off | Noise</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Zebronics_Desktop_Qc_1x._SY116_CB577919562_.jpg" alt="">
+                        <figcaption class="caption">Up to 75% off | Zebronics</figcaption>
+                    </div>
+                    <a href="" class="anchor">See all offers</a>
+                </div>
+            </div>
+            
+            <div class="sub-banner1">
+                <div class="banner-title">
+                    <b>Appliances for your home | Up to 55% off</b>
+                </div>
+                <div class="banner-image">
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" alt="">
+                        <figcaption class="caption">Air Conditioners</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg" alt="">
+                        <figcaption class="caption">Refrigerators</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg" alt="">
+                        <figcaption class="caption">Microwaves</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg" alt="">
+                        <figcaption class="caption">Washing Machines</figcaption>
+                    </div>
+                    <a href="" class="anchor">See more</a>
+                </div>
+            </div>
+
+            <div class="sub-banner1">
+                <div class="banner-title">
+                    <b>Up to 60% off | Styles for men</b>
+                </div>
+                <div class="banner-image">
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-1-186-116._SY116_CB636110853_.jpg" alt="">
+                        <figcaption class="caption">Clothing</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-2-186-116._SY116_CB636110853_.jpg" alt="">
+                        <figcaption class="caption">Footwere</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-3-186-116._SY116_CB636110853_.jpg" alt="">
+                        <figcaption class="caption">Watches</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-4-186-116._SY116_CB636110853_.jpg" alt="">
+                        <figcaption class="caption">Bags & Wallets</figcaption>
+                    </div>
+                    <a href="" class="anchor">End of season sale</a>
+                </div>
+            </div>
+
+            <div class="sub-banner1">
+                <div class="banner-title">
+                    <b>Starting ₹99 | All your home improvement needs</b>
+                </div>
+                <div class="banner-image">
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_4._SY116_CB600489960_.jpg" alt="">
+                        <figcaption class="caption">Spin mops, wipes & more</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_3._SY116_CB600489960_.jpg" alt="">
+                        <figcaption class="caption">Bathroom hardware & accessories</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_7._SY116_CB600489960_.jpg" alt="">
+                        <figcaption class="caption">Hammers, screwdrivers & more</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_5._SY116_CB600489960_.jpg" alt="">
+                        <figcaption class="caption">Extension bords, plugs & more</figcaption>
+                    </div>
+                    <a href="" class="anchor">Explore all</a>
+                </div>
+            </div>
+
+            <div class="sub-banner1">
+                <div class="banner-title">
+                    <b>Up to 75% off | Headphones</b>
+                </div>
+                <div class="banner-image">
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Boat_Desktop_Qc_1x._SY116_CB577919562_.jpg" alt="">
+                        <figcaption class="caption">Up to 75% off | Boat</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Boult_Desktop_Qc_1x._SY116_CB577919562_.jpg" alt="">
+                        <figcaption class="caption">Up to 75% off | Boult</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Noise_Desktop_Qc_1x._SY116_CB577919562_.jpg" alt="">
+                        <figcaption class="caption">Up to 75% off | Noise</figcaption>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Zebronics_Desktop_Qc_1x._SY116_CB577919562_.jpg" alt="">
+                        <figcaption class="caption">Up to 75% off | Zebronics</figcaption>
+                    </div>
+                    <a href="" class="anchor">See all offers</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mobiles">
+            <div class="mobiles-title">
+                <b>Today’s Deals</b>
+                <a href="" class="anchor1">See all deals</a>
+            </div>
+            <div class="mobiles1">
+                <div class="mobile-image">
+                    <img src="https://m.media-amazon.com/images/I/41tSQSq1xJL._AC_SY200_.jpg" alt="">
+                    <a href="" class="anchor2">Up to 27% off</a>
+                    <a href="" class="anchor3">Limited time deal</a>
+                    <p>Starting from 10999 including additio…</p>
+                </div>
+                <div class="mobile-image">
+                    <img src="https://m.media-amazon.com/images/I/41WnWm3IjiL._AC_SY200_.jpg" alt="">
+                    <a href="" class="anchor2">Up to 27% off</a>
+                    <a href="" class="anchor3">Limited time deal</a>
+                    <p>Starting from 10999 including additio…</p>
+                </div>
+                <div class="mobile-image">
+                    <img src="https://m.media-amazon.com/images/I/41snmTn9mrL._AC_SY200_.jpg" alt="">
+                    <a href="" class="anchor2">Up to 27% off</a>
+                    <a href="" class="anchor3">Limited time deal</a>
+                    <p>Starting from 10999 including additio…</p>
+                </div>
+                <div class="mobile-image">
+                    <img src="https://m.media-amazon.com/images/I/41m-C1HHkIL._AC_SY200_.jpg" alt="">
+                    <a href="" class="anchor2">Up to 27% off</a>
+                    <a href="" class="anchor3">Limited time deal</a>
+                    <p>Starting from 10999 including additio…</p>
+                </div>
+                <div class="mobile-image">
+                    <img src="https://m.media-amazon.com/images/I/41yAce7gd4L._AC_SY200_.jpg" alt="">
+                    <a href="" class="anchor2">Up to 27% off</a>
+                    <a href="" class="anchor3">Limited time deal</a>
+                    <p>Starting from 10999 including additio…</p>
+                </div>
+                <div class="mobile-image">
+                    <img src="https://m.media-amazon.com/images/I/411gvmvNQzL._AC_SY200_.jpg" alt="">
+                    <a href="" class="anchor2">Up to 27% off</a>
+                    <a href="" class="anchor3">Limited time deal</a>
+                    <p>Starting from 10999 including additio…</p>
+                </div>
+    
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        footer
+    </div>
+</body>
+</html>

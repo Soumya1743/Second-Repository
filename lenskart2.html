@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12.5px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+            padding-top: 10px;
+            margin-right: 18px;
+        }
+        .header2{
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact-image{
+            margin-top: 19px;
+            margin-left: -50px;
+            width: 140px;
+        }
+        .searching{
+            margin-top: 19px;
+            margin-left: -15px;
+            width: 450px;
+            font-size: 18px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 6px;
+        }
+        .searching ::placeholder{
+            font-weight: 300;
+        }
+        .cart{
+            display: flex;
+            justify-content: space-between;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        .track-order{
+            padding: 20px;
+            cursor: pointer;
+        }
+        .signin{
+            padding: 20px;
+            cursor: pointer;
+        }
+        .wishlist{
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        .cart1{
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        .header3{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            background-color: rgb(245, 245, 245);
+        }
+        .types{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+        .blu{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            cursor: pointer;
+        }
+        .blu div img{
+            margin-right: 15px;
+            width: 85px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        .types div{
+            margin-left: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        .wishlist div img{
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .cart1 div img{
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .a{
+            padding-top: 5px;
+        }
+        .b{
+            padding-top: 5px;
+        }
+        .type2{
+            padding-bottom: 10px;
+        }
+        .type2:hover{
+            border-bottom: 3px solid black;
+            cursor: pointer;
+        }
+        .glass-info .details{
+            display: flex;
+            margin-top: 100px;
+            border-top: 1px solid black ;
+        }
+
+        .eyeglasses-details{
+            background-color: white;
+            left: 0.2px;
+            right: 15px;
+            display: none;
+            width: 1450px;
+            margin-left: 5px;
+        }
+        .type2{
+            position: relative;
+        }
+        .eyeglasses-details{
+            position: absolute;
+        }
+        .type1:hover .eyeglasses-details{
+            display: block;
+        }
+        .eyeglasses-details div img{
+            width: 50px;
+            height: 50px;
+        }
+        .container{
+            display: flex;
+        }
+        .men{
+            font-size: 20px;
+        }
+        .container1 div p{
+            display: inline-block;
+            margin-left: 30px;
+            margin-top: -200px;
+        }
+        .men-image{
+            margin-top: 80px;
+        }
+        .container2{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+        }
+        .soumya2{
+            font-size: 20px;
+            font-weight: 550;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 50px;
+        }
+        .soumya3{
+            padding-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .computer-glasses-container{
+            display: flex;
+        }
+        .computer-glasses-details{
+            position: absolute;
+            background-color: white;
+            left: 0.2px;
+            right: 15px;
+            display: none;
+            width: 1450px;
+            margin-left: 5px;
+        }
+        .type1:hover .computer-glasses-details{
+            display: block;
+        }
+        .computer-glasses-details div img{
+            width: 50px;
+            height: 50px;
+        }
+        .computer-glasses-details div img{
+            width: 50px;
+            height: 50px;
+        }
+        .computer-glasses-container1 div p{
+            display: inline-block;
+            margin-left: 30px;
+            margin-top: -200px;
+        }
+        .computer-glasses-container2 div{
+            margin-top: 20px;
+            width: 200px;
+        }
+        .banner{
+            width: 99%;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 40px;
+        }
+        .banner img{
+            width: 100%;
+        }
+        .glasses{
+            display: flex;
+        }
+        .c1{
+            width: 16%;
+            border: 1px solid black;
+        }
+        .c2{
+            
+            width: 84%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 880px;
+        }
+        .sub-container1{
+            width: 90%;
+            border: 1px solid black;
+            height: 400px;
+            margin-top: 30px;
+            margin-left: 30px;
+            border-radius: 7px;
+        }
+        .sub-container2{
+            width: 90%;
+            border: 1px solid black;
+            height: 400px;
+            margin-top: 30px;
+            margin-left: 20px;
+            border-radius: 7px;
+        }
+        .sub-container3{
+            width: 90%;
+            border: 1px solid black;
+            height: 400px;
+            margin-top: 30px;
+            margin-left: 20px;
+            border-radius: 7px;
+        }
+        .sub-container4{
+            width: 90%;
+            border: 1px solid black;
+            height: 400px;
+            margin-top: 20px;
+            margin-left: 30px;
+            border-radius: 7px;
+        }
+        .sub-container5{
+            width: 90%;
+            border: 1px solid black;
+            height: 400px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 7px;
+        }
+        .sub-container6{
+            width: 90%;
+            border: 1px solid black;
+            height: 400px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 7px;
+        }
+        .sub-container1 div img{
+            width: 95%;
+            padding-top: 0px;
+            cursor: pointer;
+            margin-bottom: 50px;
+            border-radius: 7px;
+        }
+        .sub-container2 div img{
+            width: 95%;
+            padding-top: 0px;
+            cursor: pointer;
+            margin-bottom: 50px;
+            border-radius: 7px;
+        }
+        .sub-container3 div img{
+            width: 95%;
+            padding-top: 0px;
+            cursor: pointer;
+            margin-bottom: 50px;
+            border-radius: 7px;
+        }
+        .sub-container4 div img{
+            width: 95%;
+            padding-top: 0px;
+            cursor: pointer;
+            margin-bottom: 50px;
+            border-radius: 7px;
+        }
+        .sub-container5 div img{
+            width: 95%;
+            padding-top: 0px;
+            cursor: pointer;
+            margin-bottom: 50px;
+            border-radius: 7px;
+        }
+        .sub-container6 div img{
+            width: 95%;
+            padding-top: 0px;
+            cursor: pointer;
+            margin-bottom: 50px;
+            border-radius: 7px;
+        }
+        .sub-container1 h3, p{
+            margin-left: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .sub-container1:hover{
+            box-shadow: 0px 0px 20px gray;
+        }
+        .sub-container2:hover{
+            box-shadow: 0px 0px 20px gray;
+        }
+        .sub-container3:hover{
+            box-shadow: 0px 0px 20px gray;
+        }
+        .sub-container4:hover{
+            box-shadow: 0px 0px 20px gray;
+        }
+        .sub-container5:hover{
+            box-shadow: 0px 0px 20px gray;
+        }
+        .sub-container6:hover{
+            box-shadow: 0px 0px 20px gray;
+        }
+        .linear-gradient{
+            background: linear-gradient(to right, rgb(255, 225, 203), rgb(255, 250, 245), rgb(255, 251, 248),  rgb(255, 251, 246));
+            color: rgba(246, 154, 61, 0.57);
+            padding-top: 10px;
+            padding-bottom: 17px;
+        }
+        .sub-glasses{
+            display: flex;
+            justify-content: space-between;
+        }
+        .sub-glasses div{
+            border: 1px solid black;
+            width: 30%;
+            border-radius: 3px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header1">
+            <div>
+                Do More, Be More &#124; Tryin3D &#124; StoreLocator &#124; Singapore &#124; UAE &#124; John Jacobs &#124; Aqualens &#124; Cobrowsing &#124; Engineering Blog &#124; Lenskart Franchise
+            </div>
+            <div>
+                Contact Us
+            </div>
+        </div>
+        <div class="header2">
+            <div>
+                <img src="https://static.lenskart.com/media/desktop/img/site-images/main_logo.svg" alt="">
+                
+            </div>
+            <div>
+                <img src="https://static1.lenskart.com/media/desktop/img/republic/eye/new-toll-number.png" alt="" class="contact-image">
+            </div>
+            <div>
+                <input type="search" class="searching" placeholder="What are you looking for?">
+            </div>
+            <div class="cart">
+                <div class="track-order">
+                    Track Order
+                </div>
+                <div class="signin">
+                    Sign In & Sign Up
+                </div>
+                <div class="wishlist">
+                    <div><img src="https://www.kindpng.com/picc/m/97-977427_heart-symbol-clip-art-transparent-background-heart-icon.png" alt=""></div>
+                    <div class="a">Wishlist</div>
+                </div>
+                <div class="cart1">
+                    <div><img src="https://static.vecteezy.com/system/resources/previews/004/999/463/original/shopping-cart-icon-illustration-free-vector.jpg" alt=""></div>
+                    <div class="b">Cart</div>
+                </div>
+            </div>
+        </div>
+        <div class="header3">
+            <div class="types">
+                <div class="type1">
+                    <div class="type2">EYEGLASSES</div>
+                    <div class="eyeglasses-details">
+                        <div class="container">
+                            <div class="container1">
+                                <div class="men-container">
+                                    <img src="https://static.lenskart.com/media/desktop/img/men_pic.png" alt="" class="men-image">
+                                    <p>Men</p>
+                                </div>
+                                <div>
+                                    <img src="https://static.lenskart.com/media/desktop/img/women_pic.png" alt="">
+                                    <p>Female</p>
+                                </div>
+                                <div>
+                                    <img src="https://static.lenskart.com/media/desktop/img/kid_pic.png" alt="">
+                                    <p>Kids</p>
+                                </div>
+                            </div>
+                            <div class="container2">
+                                <div class="soumya1">
+                                    <div class="soumya2">SELECT CATEGORY</div>
+                                    <div><hr></div>
+                                    <div class="soumya3">CLASSIC EYEGLASSES</div>
+                                    <div class="soumya3">Starting From ₹1200</div>
+                                    <div class="soumya3">PREMIUM EYEGLASSES</div>
+                                    <div class="soumya3">Starting From ₹2500</div>
+                                    <div class="soumya3">COMPUTER EYEGLASSES</div>
+                                    <div class="soumya3">Starting From ₹500</div>
+                                </div>
+                                <div class="soumya1">
+                                    <div class="soumya2">Our Top Picks</div>
+                                    <div><hr></div>
+                                    <div class="soumya3">New Arrivals</div>
+                                    <div class="soumya3">Best Seller</div>
+                                    <div class="soumya3">Lenskart BLU Lenses</div>
+                                    <div class="soumya3">Tinted Eyeglasses</div>
+                                    <div class="soumya3">Progressive Eyeglasses</div>
+                                </div>
+                                <div class="soumya1">
+                                    <div class="soumya2">Frame Type</div>
+                                    <div><hr></div>
+                                    <div class="soumya3">Rectangular Frames</div>
+                                    <div class="soumya3">Wayfarer Frames</div>
+                                    <div class="soumya3">Round Frames</div>
+                                    <div class="soumya3">Aviator Frames</div>
+                                    <div class="soumya3">Cat-Eye Frames</div>
+                                    <div class="soumya3">Rimless Frames</div>
+                                    <div class="soumya3">Halfirm Frames</div>
+                                    <div class="soumya3">Geometric Frames</div>
+                                </div>
+                                <div class="soumya1">
+                                    <div class="soumya2">Collection</div>
+                                    <div><hr></div>
+                                    <div class="soumya3">Switch Grip</div>
+                                    <div class="soumya3">Gulmarg Collection</div>
+                                    <div class="soumya3">Urban Edit</div>
+                                    <div class="soumya3">Blend Edit</div>
+                                    <div class="soumya3">Sleek Steel</div>
+                                    <div class="soumya3">Switch - Magnetic Clips-On</div>
+                                    <div class="soumya3">Air Flex</div>
+                                    <div class="soumya3">Electro Punk</div>
+                                    <div class="soumya3">Classic Acetate</div>
+                                    <div class="soumya3">Matte Essentials</div>
+                                </div>
+                                <div class="soumya1">
+                                    <div class="soumya2">Brands</div>
+                                    <div><hr></div>
+                                    <div class="soumya3">Vincent Chase</div>
+                                    <div class="soumya3">Lenskart Air</div>
+                                    <div class="soumya3">OJOS</div>
+                                    <div class="soumya3">Lenskart STUDIO</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="type1">
+                    <div class="type2">COMPUTER GLASSES</div>
+                    <div class="computer-glasses-details">
+                        <div class="computer-glasses-container">
+                            <div class="computer-glasses-container1">
+                                <div class="men-container">
+                                    <img src="https://static.lenskart.com/media/desktop/img/men_pic.png" alt="" class="men-image">
+                                    <p>Men</p>
+                                </div>
+                                <div>
+                                    <img src="https://static.lenskart.com/media/desktop/img/women_pic.png" alt="">
+                                    <p>Female</p>
+                                </div>
+                                <div>
+                                    <img src="https://static.lenskart.com/media/desktop/img/kid_pic.png" alt="">
+                                    <p>Kids</p>
+                                </div>
+                            </div>
+                            <div class="computer-glasses-container2">
+                                <div class="soumya1">
+                                    <div class="soumya2">SELECT CATEGORY</div>
+                                    <div><hr></div>
+                                    <div class="soumya3">Blu 0 Computer Glasses Starting From ₹500</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="type1">
+                    <div class="type2">KIDS GLASSES</div>
+                </div>
+                <div class="type1">CONTACT LENSES</div>
+                <div class="type1">SUN GLASSES</div>
+                <div class="type1">HOME EYE-TEST</div>
+                <div class="type1">STORE LOCATOR</div>
+            </div>
+            <div class="blu">
+                <div><img src="https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png" alt=""></div>
+                <div><img src="https://static1.lenskart.com/media/desktop/img/Mar22/13-Mar/blulogo.png" alt=""></div>
+                <div><img src="https://static5.lenskart.com/media/uploads/gold_max_logo_dc.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="https://static1.lenskart.com/media/desktop/img/2024/apr/payday/plp/web/vc-1200.png" alt="">
+    </div>
+    <div class="glasses">
+        <div class="c1">
+            <p>AGE GROUP</p>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox">2 - 5 yrs(58)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">5 - 8 yrs(160)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">8 - 12 yrs(195)
+                    </td>
+                </tr>
+            </table>
+            
+            <div><P>FRAME TYPE</P></div>
+            <div class="sub-glasses">
+                <div>
+                    <img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/FullRim.png" alt="">
+                    <center>FullRim</center>
+                </div>
+                <div>
+                    <img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/HalfRim.png" alt="">
+                    <center>HalfRim</center>
+                </div>
+                <div>
+                    <img src="https://static.lenskart.com/images/cust_mailer/Eyeglass/Rimless.png" alt="">
+                    <center>Rimless</center>
+                </div>
+            </div>
+        </div>
+        <div class="c2">
+            <div class="sub-container1">
+                <div class="img1"><img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/transparent-gold-full-rim-rectangle-lenskart-air-essentials-la-e13517-c2-eyeglasses_csvfile-1695816767916-g_7546_27_09_2023.jpg" alt=""></div>
+                <h3>Lenskart Air</h3>
+                <p>Size: Medium - AIr Essentials</p>
+                <p>1700 Rs</p>
+                <div class="linear-gradient">Get for 1200 Rs. Coupon: SINGLE</div>
+            </div>
+            <div class="sub-container2">
+                <div class="img1"><img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/transparent-gold-full-rim-rectangle-lenskart-air-essentials-la-e13517-c2-eyeglasses_csvfile-1695816767916-g_7546_27_09_2023.jpg" alt=""></div>
+                <h3>Lenskart Air</h3>
+                <p>Size: Medium - AIr Essentials</p>
+                <p>1700 Rs</p>
+                <div class="linear-gradient">Get for 1200 Rs. Coupon: SINGLE</div>
+            </div>
+            <div class="sub-container3">
+                <div class="img1"><img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/transparent-gold-full-rim-rectangle-lenskart-air-essentials-la-e13517-c2-eyeglasses_csvfile-1695816767916-g_7546_27_09_2023.jpg" alt=""></div>
+                <h3>Lenskart Air</h3>
+                <p>Size: Medium - AIr Essentials</p>
+                <p>1700 Rs</p>
+                <div class="linear-gradient">Get for 1200 Rs. Coupon: SINGLE</div>
+            </div>
+            <div class="sub-container4">
+                <div class="img1"><img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/transparent-gold-full-rim-rectangle-lenskart-air-essentials-la-e13517-c2-eyeglasses_csvfile-1695816767916-g_7546_27_09_2023.jpg" alt=""></div>
+                <h3>Lenskart Air</h3>
+                <p>Size: Medium - AIr Essentials</p>
+                <p>1700 Rs</p>
+                <div class="linear-gradient">Get for 1200 Rs. Coupon: SINGLE</div>
+            </div>
+            <div class="sub-container5">
+                <div class="img1"><img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/transparent-gold-full-rim-rectangle-lenskart-air-essentials-la-e13517-c2-eyeglasses_csvfile-1695816767916-g_7546_27_09_2023.jpg" alt=""></div>
+                <h3>Lenskart Air</h3>
+                <p>Size: Medium - AIr Essentials</p>
+                <p>1700 Rs</p>
+                <div class="linear-gradient">Get for 1200 Rs. Coupon: SINGLE</div>
+            </div>
+            <div class="sub-container6">
+                <div class="img1"><img src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/transparent-gold-full-rim-rectangle-lenskart-air-essentials-la-e13517-c2-eyeglasses_csvfile-1695816767916-g_7546_27_09_2023.jpg" alt=""></div>
+                <h3>Lenskart Air</h3>
+                <p>Size: Medium - AIr Essentials</p>
+                <p>1700 Rs</p>
+                <div class="linear-gradient">Get for 1200 Rs. Coupon: SINGLE</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
